@@ -1,3 +1,3 @@
 let message2: string = "Hello, World!"
-message2 = 5;
-console.log(message);
+message2 = "Another string";
+console.log(message2);
