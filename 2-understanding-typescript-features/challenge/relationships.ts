@@ -17,3 +17,16 @@ export function getRelationshipStatus(userOneId: number, userTwoId: number): str
     (r.userIds[0] === userTwoId && r.userIds[1] === userOneId));
   return relation ? relation.status : 'no relationship';
 }
+
+export function updateRelationshipStatus(userId: number, status: Relationship['status'], newStatus: Relationship['status']): string {
+  const relationshipIndex = relationships.findIndex(r => r.userIds.includes(userId));
+  if (relationshipIndex > -1) {
+    const updatedRelationship: Partial<Relationship> = {
+      ...relationships[relationshipIndex],
+      status: newStatus
+    };
+    relationships[relationshipIndex] = updatedRelationship as Relationship;
+    return `Status updated to ${newStatus}`;
+  }
+  return 'Relationship not found';
+}
