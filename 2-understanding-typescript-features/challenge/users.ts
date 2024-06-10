@@ -15,7 +15,7 @@ function logUserDetails(user) {
   console.log(`Name: ${user.name}, Role: ${user.role}`);
 }
 
-// Function to merge two objects
-function mergeObjects(obj1, obj2) {
-  return { ...obj1, ...obj2 };
+// Function to merge two objects: a user and an age key value pair { age: 22 }
+function mergeObjects(user, age) {
+  return { ...user, ...age };
 }
