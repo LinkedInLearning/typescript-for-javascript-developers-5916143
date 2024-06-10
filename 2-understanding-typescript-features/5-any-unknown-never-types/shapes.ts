@@ -3,7 +3,7 @@ type Point = {
   y: number;
 };
 
-type Circle = {
+type Circle2 = {
   center: Point;
   radius: number;
   kind: "circle";
