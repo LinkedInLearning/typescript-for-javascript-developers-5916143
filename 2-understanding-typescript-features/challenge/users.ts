@@ -1,15 +1,21 @@
-export interface User {
-  id: number;
-  name: string;
-  email?: string;
+// Sample data
+const data = [
+  { id: 1, name: 'Zia', role: 'admin' },
+  { id: 2, name: 'Gaia', role: 'user' },
+  { id: 3, name: 'Noora', role: 'guest' }
+];
+
+// Function to find a user by ID
+function findUserById(id) {
+  return data.find(user => user.id === id);
 }
 
-const users: User[] = [];
-
-export function addUser(user: User): void {
-  users.push(user);
+// Function to log user details
+function logUserDetails(user) {
+  console.log(`Name: ${user.name}, Role: ${user.role}`);
 }
 
-export function getUser(id: number): User | undefined {
-  return users.find(u => u.id === id);
+// Function to merge two objects
+function mergeObjects(obj1, obj2) {
+  return { ...obj1, ...obj2 };
 }
