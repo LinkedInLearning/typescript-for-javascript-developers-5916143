@@ -1,31 +1,40 @@
-export interface User {
+// Define a type alias for the user object
+type User = {
   id: number;
   name: string;
-  email?: string;
+  role: 'admin' | 'user' | 'guest';
+};
+
+// Sample data
+const data: User[] = [
+  { id: 1, name: 'Zia', role: 'admin' },
+  { id: 2, name: 'Gaia', role: 'user' },
+  { id: 3, name: 'Noora', role: 'guest' }
+];
+
+// Function to find a user by ID
+function findUserById(id: number): User | undefined {
+  return data.find(user => user.id === id);
 }
 
-const users: User[] = [];
-
-export function addUser(user: User): void {
-  users.push(user);
+// Function to log user details with type assertions
+function logUserDetails(user: User): void {
+  console.log(`Name: ${user.name}, Role: ${user.role}`);
 }
 
-export function getUser(id: number | string): User | "User not found" | never {
-  if (typeof id !== 'number') {
-    throw new Error("Invalid ID type");
-  }
+// Create an intersection type
+type MergedObject = User & { age: number };
 
-  const user = users.find(u => u.id === id);
-  return user || "User not found";
+// Function to merge two objects using intersection type
+function mergeObjects(obj1: User, obj2: { age: number }): MergedObject {
+  return { ...obj1, ...obj2 };
 }
 
-export function processInputData(input: any): void {
-  let verifiedInput: unknown = input;
-  if (typeof verifiedInput === 'string') {
-    console.log("Processing string:", verifiedInput);
-  } else if (typeof verifiedInput === 'number') {
-    console.log("Processing number:", verifiedInput);
-  } else {
-    console.log("Type not supported");
-  }
+// Testing the functions
+const user = findUserById(1);
+if (user) {
+  logUserDetails(user);
 }
+
+const merged = mergeObjects({ id: 4, name: 'Mariya', role: 'user' }, { age: 30 });
+console.log(merged);

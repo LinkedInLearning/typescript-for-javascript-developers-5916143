@@ -21,4 +21,4 @@ const anotherNewEmployee: Employee = {
   email: "besma@example.com"
 };
 
-signContract(newEmployee);
+signContract2(anotherNewEmployee);
