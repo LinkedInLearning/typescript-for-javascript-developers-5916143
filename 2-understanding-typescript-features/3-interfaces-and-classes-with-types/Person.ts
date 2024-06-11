@@ -17,5 +17,6 @@ export class Person {
 const person = new Person('Zia', 25);
 person.greet();
 
+
 // Cannot access private property outside the class:
 // console.log(person.name);  // Error

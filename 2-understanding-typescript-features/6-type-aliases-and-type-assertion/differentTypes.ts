@@ -10,3 +10,10 @@ type Triangle = {
   base: number;
   height: number;
 };
+
+type Circle = {
+  center: Point;
+  radius: number;
+  kind: "circle";
+
+};
