@@ -1,0 +1,12 @@
+{
+  "name": "typescript-for-javascript-developers-5916143",
+  "version": "1.0.0",
+  "description": "This is the repository for the LinkedIn Learning course TypeScript for JavaScript Developers. The full course is available from [LinkedIn Learning][lil-course-url].",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
