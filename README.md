@@ -1,6 +1,14 @@
 # TypeScript for JavaScript Developers
 This is the repository for the LinkedIn Learning course TypeScript for JavaScript Developers. The full course is available from [LinkedIn Learning][lil-course-url].
 
+![lil-thumbnail-url]
+
+<p>In this course, trainer and developer Maaike van Putten provides the missing link to help JavaScript developers get started with TypeScript. If your skills are already beyond a regular TypeScript introduction course and not yet enough for courses solely focused on using TypeScript with Node, Angular, and so on, this course bridges the gaps and gets you ready to advance. </p>
+
+<p>Dive into TypeScript, beginning with an introduction to TypeScript, its setup, and basic compilation. Progress through fundamental concepts, advanced typing, and practical application. Plus, explore real-world project migrations and integrations with popular frameworks. </p>
+
+<p>After completing the course, you will be proficient in TypeScript, able to transition from JavaScript to TypeScript and improve existing projects or start new ones with a solid foundation in TypeScript's advanced type system. You will also be prepared to tackle real-world development challenges. </p>
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -20,15 +28,9 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
-
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/typescript-for-javascript-developers
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4D0DAQFkZplt1jAsUQ/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1723660257269?e=2147483647&v=beta&t=xqprr2U3YKXpskMO7e5re3h2yNH-81tCI1fzhvSeRfA
 
